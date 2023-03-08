@@ -8,7 +8,7 @@ import time
 # Flags to determine which part of the file to run and how much to print to the console
 debug = True
 # Change these to True when you are ready to run the Python and C++ simulations
-runPython = False
+runPython = True
 runCpp = True
 
 # Create empty lists that will store the bubble sort runtimes
@@ -132,9 +132,9 @@ if len(pythonTimes) < 10 or len(cppTimes) < 10:
     ax.bar(sizes, range(1, 11), width=300, color='b', align='center')
 else:
     # Plot the Python bars in red
-    ax.bar(pythonTimes, range(1, 11), width=300, color='r', align='center')
+    ax.bar(pythonX, pythonTimes, width=300, color='r', align='center')
     # Plot the C++ bars in yellow
-    #ax.bar(cppX, range(1, 11), width=300, color='y', align='edge')
+    ax.bar(cppX, cppTimes, width=300, color='y', align='edge')
 # Set the window title
 plt.gcf().canvas.manager.set_window_title('Speed Test')
 # Set the graph title
