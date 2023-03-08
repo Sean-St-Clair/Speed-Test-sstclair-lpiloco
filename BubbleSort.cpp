@@ -6,6 +6,7 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
+    cout << "TEST" << endl;
     int size;
     // Get command line input
     if (argc > 1) {
