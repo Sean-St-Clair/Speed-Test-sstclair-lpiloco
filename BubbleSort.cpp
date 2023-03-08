@@ -7,8 +7,6 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    // Test commit! -Sean
-    cout << "TEST" << endl;
     int size;
     // Get command line input
     if (argc > 1) {
