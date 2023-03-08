@@ -132,9 +132,9 @@ if len(pythonTimes) < 10 or len(cppTimes) < 10:
     ax.bar(sizes, range(1, 11), width=300, color='b', align='center')
 else:
     # Plot the Python bars in red
-    ax.bar(sizes, range(1, 11), width=300, color='r', align='left')
+    ax.bar(sizes, range(1, 11), width=300, color='r', align='center')
     # Plot the C++ bars in yellow
-    ax.bar(sizes, range(1, 11), width=300, color='y', align='left')
+    #ax.bar(sizes, range(1, 11), width=300, color='y', align='edge')
 # Set the window title
 plt.gcf().canvas.manager.set_window_title('Speed Test')
 # Set the graph title
