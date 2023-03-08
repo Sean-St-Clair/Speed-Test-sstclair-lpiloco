@@ -130,10 +130,11 @@ ax = plt.subplot(111)
 if len(pythonTimes) < 10 or len(cppTimes) < 10:
     # Plot the dummy values in blue
     ax.bar(sizes, range(1, 11), width=300, color='b', align='center')
-# else:
-#     # TODO: Plot the Python bars in red
-#     ax.bar(sizes, range(1, 11), width=300, color='r', align='left')
-#     # TODO: Plot the C++ bars in yellow
+else:
+    # Plot the Python bars in red
+    ax.bar(sizes, range(1, 11), width=300, color='r', align='left')
+    # Plot the C++ bars in yellow
+    ax.bar(sizes, range(1, 11), width=300, color='y', align='left')
 # Set the window title
 plt.gcf().canvas.manager.set_window_title('Speed Test')
 # Set the graph title
